@@ -36,43 +36,43 @@ fill-in-your-answer
 
 # 1. (3 points)
 
-![image](image.png?raw=true)
+![image](img/cp1.png?raw=true)
 
-[checkpoint](checkpoint.html)
+[checkpoint](cp1.html)
 
 # 2. (3 points)
 
-![image](image.png?raw=true)
+![image](img/cp2.png?raw=true)
 
-[checkpoint](checkpoint.html)
+[checkpoint](cp2.html)
 
 # 3. (3 points)
 
-![image](image.png?raw=true)
+![image](img/cp3.png?raw=true)
 
-[checkpoint](checkpoint.html)
+[checkpoint](cp3.html)
 
 # 4. (3 points)
 
-![image](image.png?raw=true)
+![image](img/cp4.png?raw=true)
 
-[checkpoint](checkpoint.html)
+[checkpoint](cp4.html)
 
 ## Challenges (4 points x 3 = 12 points)
 
 # 1. (4 points)
 
-![image](image.png?raw=true)
+![image](img/ch1.png?raw=true)
 
 # 2. (4 points)
 
-![image](image.png?raw=true)
+![image](img/ch2.png?raw=true)
 
 # 3. (4 points)
 
-![image](image.png?raw=true)
+![image](img/ch3.png?raw=true)
 
-[challenge3](challenge3.html)
+[challenge3](ch3.html)
 
 
 
@@ -151,7 +151,7 @@ fill-in-your-answer
 ![screenshot](screenshot.png?raw=true)
 
 
-## Challenge 2 (8 points x 2 = 16 points) 
+## Challenge 2 (8 points x 2 = 16 points)
 
 ### 1 (8 points)
 
