@@ -38,25 +38,25 @@ fill-in-your-answer
 
 ![image](img/cp1.png?raw=true)
 
-[checkpoint](cp1.html)
+[checkpoint](d3/cp1.html)
 
 # 2. (3 points)
 
 ![image](img/cp2.png?raw=true)
 
-[checkpoint](cp2.html)
+[checkpoint](d3/cp2.html)
 
 # 3. (3 points)
 
 ![image](img/cp3.png?raw=true)
 
-[checkpoint](cp3.html)
+[checkpoint](d3/cp3.html)
 
 # 4. (3 points)
 
 ![image](img/cp4.png?raw=true)
 
-[checkpoint](cp4.html)
+[checkpoint](d3/cp4.html)
 
 ## Challenges (4 points x 3 = 12 points)
 
@@ -72,7 +72,7 @@ fill-in-your-answer
 
 ![image](img/ch3.png?raw=true)
 
-[challenge3](ch3.html)
+[challenge3](d3/ch3.html)
 
 
 
@@ -82,89 +82,89 @@ fill-in-your-answer
 
 ### 1 (6 points)
 
-[mongodb js code collecting github events about our course](mongodb-github.js)
+[mongodb js code collecting github events about our course](mongodb/cp1.js)
 
 ### 2 (6 points)
 
-![terminal output of mongodb query](screenshot.png?raw=true)
+![terminal output of mongodb query](img/mcp2.png?raw=true)
 
 ## Challenge 1 (4 points x 10 = 40 points)
 
 ### 1 (4 points)
 
-> db.course_events.[complete this query]
+> db.course_events.findOne({ "actor.login" : "doubleshow" })
 
-![screenshot](screenshot.png?raw=true)
+![screenshot](img/mch1.png?raw=true)
 
 ### 2 (4 points)
 
-> db.course_events.[complete this query]
+> db.course_events.findOne({"actor.login" : "doubleshow" }, {"actor": 1})
 
-![screenshot](screenshot.png?raw=true)
+![screenshot](img/mch2.png?raw=true)
 
 ### 3 (4 points)
 
-> db.course_events.[complete this query]
+> db.course_events.find({ "actor.login" : {$in : ["doubleshow", "chrisbopp"]}}, {"actor.login":1, "created_at":1})
 
-![screenshot](screenshot.png?raw=true)
+![screenshot](img/mch3.png?raw=true)
 
 ### 4 (4 points)
 
-> db.course_events.[complete this query]
+> db.course_events.db.course_events.findOne({'type':'PushEvent'})
 
-![screenshot](screenshot.png?raw=true)
+![screenshot](img/mch4.png?raw=true)
 
 ### 5 (4 points)
 
-> db.course_events.[complete this query]
+> db.course_events.find({'type':'PushEvent'},{'payload.commits.author.name':1})
 
-![screenshot](screenshot.png?raw=true)
+![screenshot](img/mch5.png?raw=true)
 
 ### 6 (4 points)
 
-> db.course_events.[complete this query]
+> db.course_events.findOne({'type' : { $in : ["IssuesEvent"]}})
 
-![screenshot](screenshot.png?raw=true)
+![screenshot](img/mch6.png?raw=true)
 
 ### 7 (4 points)
 
-> db.course_events.[complete this query]
+> db.course_events.find({'type' : { $in : ["IssuesEvent"]}}, {"payload.issue.user.login" : 1})
 
-![screenshot](screenshot.png?raw=true)
+![screenshot](img/mch7.png?raw=true)
 
 ### 8 (4 points)
 
-> db.course_events.[complete this query]
+> db.course_events.find({'type' : { $in : ["IssuesEvent"]}, "payload.issue.state" : "closed"}, {"payload.issue.user.login" : 1 , "payload.issue.state" : 1})
 
-![screenshot](screenshot.png?raw=true)
+![screenshot](img/mch8.png?raw=true)
 
 ### 9 (4 points)
 
-> db.course_events.[complete this query]
+> db.course_events.find({'type' : { $in : ["IssuesEvent"]}, "payload.issue.state" : "open"}, {"payload.issue.user.login" : 1 , "payload.issue.state" : 1})
 
-![screenshot](screenshot.png?raw=true)
+![screenshot](img/mch9.png?raw=true)
 
 ### 10 (4 points)
 
-> db.course_events.[complete this query]
+> db.course_events.find({'type' : { $in : ["IssuesEvent"]}, "payload.issue.comments" : {$gt : 0}}, {"payload.issue.user.login" : 1 , "payload.issue.comments" : 1})
 
-![screenshot](screenshot.png?raw=true)
+![screenshot](img/mch10.png?raw=true)
 
 
 ## Challenge 2 (8 points x 2 = 16 points)
 
 ### 1 (8 points)
 
-{question-in-plain-English}
+What time do individuals (no names attached) submit pull requests?
 
-> db.course_events.[complete this query]
+> db.course_events.find({'type' : { $in : ["PullRequestEvent"]}}, {"payload.pull_request.created_at" : 1})
 
-![screenshot](screenshot.png?raw=true)
+![screenshot](img/mch21.png?raw=true)
 
 ### 2 (8 points)
 
-{question-in-plain-English}
+How many events have I contributed total to the organization (of the last 300)?
 
-> db.course_events.[complete this query]
+> db.course_events.find( {"actor.login" : "BrianNewsom"}).count()
 
-![screenshot](screenshot.png?raw=true)
+![screenshot](img/mch22.png?raw=true)
