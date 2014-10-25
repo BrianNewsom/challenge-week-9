@@ -1,34 +1,41 @@
 # Name
 
-write-your-name
+Brian Newsom
 
 # How many points have you earned?
 
-0/100
+100/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # How many hours have you spent on this?
 
-fill-in-your-answer
+6
 
 # When did you first start working on this week's learning challenges?
 
-fill-in-your-answer
+Thursday
 
 # What is the most difficult part about this week's challenge?
 
-fill-in-your-answer
+Remembering how to use Mongo. Honestly I forgot everything I had learned about it and had to look up
+simple things, even how to show databases or tables (collections).  The D3 part wasn't bad
+for me this time though, so that's good!
 
 # Show and tell (8 points)
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-article-about-machine-learning-use-for-big-data)
+[HOW BIG DATA CAN BE USED TO FIGHT UNFAIR HIRING PRACTICES](http://www.nextgov.com/big-data/2014/09/how-big-data-can-be-used-fight-unfair-hiring-practices/95195/)
 
 ## Discuss how you may apply the machine learning technique mentioned in this article to another interesting problem (6 points).
 
-fill-in-your-answer
+This article didn't so much examine the technique specifically as it examined the danger of machine learning.
+I thought it was quite interesting how the people made points that if you are using big data to hire without bias,
+but your model is based upon some bias, it will only be propagated. This is applicable in many fields, for example
+if machine learning is used to distribute money in a disaster situation, if the original model distributed the money
+primarily to women, the machine learning algorithm would likely do the same.  We must be wary of biased samples
+and the fallibility of machine learning in general if not handled correctly.
 
 # D3 IV
 
