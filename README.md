@@ -1,10 +1,8 @@
 # Name
-
-write-your-name
+Dawson Botsford
 
 # How many points have you earned?
-
-0/100
+100/100
 
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
@@ -13,8 +11,7 @@ write-your-name
 fill-in-your-answer
 
 # When did you first start working on this week's learning challenges?
-
-fill-in-your-answer
+Saturday morning
 
 # What is the most difficult part about this week's challenge?
 
@@ -24,11 +21,10 @@ fill-in-your-answer
 
 ## Link (2 points)
 
-[title-of-the-article](http://link-to-an-article-about-machine-learning-use-for-big-data)
+[Argyle Data Combating the Billion Dollar Fraud Industry With Machine Learning and Real-Time Analytics](http://www.marketwired.com/press-release/argyle-data-combating-billion-dollar-fraud-industry-with-machine-learning-real-time-1960507.htm)
 
 ## Discuss how you may apply the machine learning technique mentioned in this article to another interesting problem (6 points).
-
-fill-in-your-answer
+From the article: "53% of financial services organizations take up to 8 hours to detect fraud". Argyle data claims they have solved atleast part of this problem by using machine learning. In just seconds they can detect and mitigate fraud. They use the Hadoop Stack.
 
 # D3 IV
 
