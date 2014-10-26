@@ -58,15 +58,15 @@ From the article: "53% of financial services organizations take up to 8 hours to
 
 # 1. (4 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/jna8k2x.png)
 
 # 2. (4 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/EKXEuy5.png)
 
 # 3. (4 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/jFvuNme.png)
 
 [challenge3](challenge3.html)
 
