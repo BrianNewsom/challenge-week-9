@@ -32,27 +32,27 @@ From the article: "53% of financial services organizations take up to 8 hours to
 
 # 1. (3 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/xFWaxVX.png)
 
-[checkpoint](checkpoint.html)
+[checkpoint](checkpoint1.html)
 
 # 2. (3 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/VPlfKfp.png)
 
-[checkpoint](checkpoint.html)
+[checkpoint](checkpoint2.html)
 
 # 3. (3 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/Pd2vs0w.png)
 
-[checkpoint](checkpoint.html)
+[checkpoint](checkpoint3.html)
 
 # 4. (3 points)
 
-![image](image.png?raw=true)
+![image](http://i.imgur.com/dMbIopO.png)
 
-[checkpoint](checkpoint.html)
+[checkpoint](checkpoint4.html)
 
 ## Challenges (4 points x 3 = 12 points)
 
