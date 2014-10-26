@@ -7,15 +7,14 @@ Dawson Botsford
 (Make your own calculation and replace the number 0 with the points you think you've earned.)
 
 # How many hours have you spent on this?
-
-fill-in-your-answer
+7
 
 # When did you first start working on this week's learning challenges?
 Saturday morning
 
 # What is the most difficult part about this week's challenge?
+Having to copy d3 code in order to get it working. There was not start instructioning for the scatter plot, we were just supposed to copy something and then add a few aspects to it.
 
-fill-in-your-answer
 
 # Show and tell (8 points)
 
