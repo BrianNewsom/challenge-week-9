@@ -82,85 +82,72 @@ From the article: "53% of financial services organizations take up to 8 hours to
 
 ### 2 (6 points)
 
-![terminal output of mongodb query](screenshot.png?raw=true)
+![terminal output of mongodb query](http://i.imgur.com/Za2StDV.png)
 
 ## Challenge 1 (4 points x 10 = 40 points)
 
 ### 1 (4 points)
+> db.test_insert_github.findOne({'actor.login' : 'wannabeCitizen'},{});
 
-> db.course_events.[complete this query]
-
-![screenshot](screenshot.png?raw=true)
+![screenshot](http://i.imgur.com/pTvoEya.png)
 
 ### 2 (4 points)
+> db.test_insert_github.findOne({'actor.login' : 'wannabeCitizen'},{'actor':1}); 
 
-> db.course_events.[complete this query]
-
-![screenshot](screenshot.png?raw=true)
+![screenshot](http://i.imgur.com/QAWNErE.png)
 
 ### 3 (4 points)
+>  db.test_insert_github.find({'actor.login' : { $in : ['wannabeCitizen', 'chrisbopp']}},{'actor.login':1,'created_at':1});
 
-> db.course_events.[complete this query]
-
-![screenshot](screenshot.png?raw=true)
+![screenshot](http://i.imgur.com/H2eALuS.png)
 
 ### 4 (4 points)
+> db.test_insert_github.findOne({'type':'PushEvent'});   
 
-> db.course_events.[complete this query]
-
-![screenshot](screenshot.png?raw=true)
+![screenshot](http://i.imgur.com/k0cdlaK.png)
 
 ### 5 (4 points)
+> db.test_insert_github.find({'type':'PushEvent'}, {'payload.commits.author.name':'1'}); 
 
-> db.course_events.[complete this query]
-
-![screenshot](screenshot.png?raw=true)
+![screenshot](http://i.imgur.com/AL2blME.png)
 
 ### 6 (4 points)
+> db.test_insert_github.findOne({'type':'IssuesEvent'}, {'payload':'1'});
 
-> db.course_events.[complete this query]
-
-![screenshot](screenshot.png?raw=true)
+![screenshot](http://i.imgur.com/Mf8tl7g.png)
 
 ### 7 (4 points)
+> db.test_insert_github.find({'type':'IssuesEvent'}, {'payload.issue.user.login':'1'});
 
-> db.course_events.[complete this query]
-
-![screenshot](screenshot.png?raw=true)
+![screenshot](http://i.imgur.com/AzXXnxr.png)
 
 ### 8 (4 points)
+> db.test_insert_github.find({'type':'IssuesEvent', 'payload.action': 'closed'}, {'payload.issue.user.login':'1'});
 
-> db.course_events.[complete this query]
-
-![screenshot](screenshot.png?raw=true)
+![screenshot](http://i.imgur.com/TX9UIdZ.png)
 
 ### 9 (4 points)
+> db.test_insert_github.find({'type':'IssuesEvent', 'payload.action': 'opened'}, {'payload.issue.user.login':'1'});
 
-> db.course_events.[complete this query]
-
-![screenshot](screenshot.png?raw=true)
+![screenshot](http://i.imgur.com/OyDI4rG.png)
 
 ### 10 (4 points)
+> db.test_insert_github.find({'type':'IssuesEvent', 'payload.issue.comments':{$gt:0}}, {'payload.issue.user.login':'1', 'payload.issue.comments':1});
 
-> db.course_events.[complete this query]
-
-![screenshot](screenshot.png?raw=true)
+![screenshot](http://i.imgur.com/w4xpOhw.png)
 
 
 ## Challenge 2 (8 points x 2 = 16 points) 
 
 ### 1 (8 points)
+Who's issue gets the most attention? (Who's issue had the most comments?)
+> db.test_insert_github.find({'type':'IssuesEvent'}, {'payload.issue.user.login':'1', 'payload.issue.comments':1}).sort({'payload.issue.comments':-1}).limit(1);
 
-{question-in-plain-English}
-
-> db.course_events.[complete this query]
-
-![screenshot](screenshot.png?raw=true)
+![screenshot](http://i.imgur.com/G3ddBaC.png)
 
 ### 2 (8 points)
 
-{question-in-plain-English}
+Who forked this assignment first?
+> db.test_insert_github.find({'type':'ForkEvent','repo.name':'CSCI-4830-002-2014/challenge-week-9'},{'actor.login':1, 'created_at':1, 'repo.name':'CSCI-4830-002-2014/challenge-week-9'}).sort({'created_at':1}).limit(1).pretty;
 
-> db.course_events.[complete this query]
-
-![screenshot](screenshot.png?raw=true)
+![screenshot](http://i.imgur.com/WCcgF8u.png)
